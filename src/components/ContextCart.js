@@ -5,7 +5,7 @@ import {CartContext} from './Cart';
 import { products } from './products';
 
 function ContextCart() {
-    const {item, clearCart} = useContext(CartContext)
+    const {item, clearCart, totalItems, totalPrice} = useContext(CartContext)
 
     // const [item, setItem] = useState(products);
     if(item.length===0){
@@ -43,7 +43,7 @@ function ContextCart() {
                     </div>
                 </div>
                  <div className="card-total">
-                    <h3>card total: <span> 23000₹ </span></h3>
+                    <h3>cart total: <span> 0₹ </span></h3>
                     <button>CheckOut</button>
                     <button className="clear-cart" onClick={clearCart}>Clear Cart</button>
                 </div>
@@ -65,12 +65,12 @@ function ContextCart() {
                 <div className="cart-icon">
                     {/* <img src="./images/cart.png" alt="cart-logo" /> */}
                     <i className="fas fa-shopping-cart fa-3x cart-icon"></i>
-                    <p>7</p>
+                    <p>{totalItems}</p>
                 </div>
             </header>
             <section className="main-cart-section">
                 <h1>shopping Cart</h1>
-                <p className="total-items">you have <span className="total-items-count"> 7 </span>  items in shopping cart</p>
+                <p className="total-items">you have <span className="total-items-count"> {totalItems} </span>  items in shopping cart</p>
 
                 <div className="cart-items">
 
@@ -87,7 +87,7 @@ function ContextCart() {
                     </div>
                 </div>
                  <div className="card-total">
-                    <h3>card total: <span> 23000₹ </span></h3>
+                    <h3>cart total: <span> {totalPrice} </span></h3>
                     <button>CheckOut</button>
                     <button className="clear-cart" onClick={clearCart}>Clear Cart</button>
                 </div>
