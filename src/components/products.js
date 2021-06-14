@@ -55,20 +55,5 @@ export const products = [
       img: "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       quantity: 1,
     },
-    {
-      id: 8,
-      title: "Iphone 12",
-      description: "Best mobile ever",
-      price: "90500",
-      img: "https://images-na.ssl-images-amazon.com/images/I/71hIfcIPyxS._SL1500_.jpg",
-      quantity: 1,
-    },
-    {
-      id: 9,
-      title: "Samsung S21",
-      description: "black in color",
-      price: "2500",
-      img: "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      quantity: 1,
-    },
+    
   ];
