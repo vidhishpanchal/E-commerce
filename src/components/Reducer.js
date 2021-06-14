@@ -6,7 +6,13 @@ const reducer = (state, action)=>{
                 item: state.item.filter((currentElement)=>{
                     return currentElement.id !== action.payload;
                 })
+            };
+        case "CLEAR_CART":
+            return{
+                ...state,
+                item:[]
             }
+        
           
     
         default:

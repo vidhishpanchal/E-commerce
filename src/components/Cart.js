@@ -22,10 +22,15 @@ function Cart(){
             payload: id
         })
     }
+    const clearCart = ()=>{
+        dispatch({
+            type:"CLEAR_CART"
+        })
+    }
 
     return (
         <>
-        <CartContext.Provider value={{...state, removeItem}}>
+        <CartContext.Provider value={{...state, removeItem, clearCart}}>
          <ContextCart />
          </CartContext.Provider>
         </>
