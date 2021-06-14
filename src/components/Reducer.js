@@ -12,6 +12,20 @@ const reducer = (state, action)=>{
                 ...state,
                 item:[]
             }
+        case "INCREMENT":
+            return{
+                 item : state.item.map((currentItem)=>{
+                    if (currentItem.id === action.payload){
+                        return{
+                            ...currentItem,
+                            quantity:currentItem.quantity+1 
+                        }
+                   
+                    }
+                    return currentItem
+                })
+              
+            }
         
           
     

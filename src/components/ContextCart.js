@@ -65,12 +65,12 @@ function ContextCart() {
                 <div className="cart-icon">
                     {/* <img src="./images/cart.png" alt="cart-logo" /> */}
                     <i className="fas fa-shopping-cart fa-3x cart-icon"></i>
-                    <p>{item.length}</p>
+                    <p>7</p>
                 </div>
             </header>
             <section className="main-cart-section">
                 <h1>shopping Cart</h1>
-                <p className="total-items">you have <span className="total-items-count"> {item.length} </span>  items in shopping cart</p>
+                <p className="total-items">you have <span className="total-items-count"> 7 </span>  items in shopping cart</p>
 
                 <div className="cart-items">
 
